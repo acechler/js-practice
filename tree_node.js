@@ -4,16 +4,10 @@ class TreeNode {
       this.children = [];
     }
   
-    addChild(childNode) {
+    addChild(value) {
+      const childNode = new TreeNode(value);
       this.children.push(childNode);
+      return childNode; 
     }
+  }
   
-    // Optional: You can remove the print method if you're not using it
-    print(node = this, prefix = '') {
-      console.log(prefix + node.value);
-      node.children.forEach(childNode => {
-        childNode.print(childNode, prefix + '  ');
-      });
-    }
-}
-
