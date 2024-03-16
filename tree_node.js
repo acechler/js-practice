@@ -8,10 +8,12 @@ class TreeNode {
       this.children.push(childNode);
     }
   
+    // Optional: You can remove the print method if you're not using it
     print(node = this, prefix = '') {
       console.log(prefix + node.value);
       node.children.forEach(childNode => {
         childNode.print(childNode, prefix + '  ');
       });
     }
-  }
+}
+
