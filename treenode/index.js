@@ -21,3 +21,6 @@ function createDomFromTree(node, parentElement = document.body, level = 0) {
 }
 
 document.addEventListener('DOMContentLoaded', () => createDomFromTree(car));
+
+
+//document.addEventListener('')
